@@ -1,0 +1,68 @@
+body {
+	background-color: black;
+	font-family: Verdana, Trebuchet, sans-serif;
+	color: white;
+	margin: 0px;
+	padding: 0px;
+}
+
+nav {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	border-bottom: 1px solid white;
+}
+
+nav:hover {
+	background-color: #121212;
+}
+
+.home-logo {
+	position: fixed;
+	left: 10px;
+	top: 0px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	margin-right: 10px;
+	padding: 0;
+	overflow: hidden;
+	float: right;
+}
+
+nav li {
+	float: left;
+}
+
+nav a {
+	display: block;
+	text-align: center;
+	padding: 25px 16px;
+	color: white;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #00A8CCDD;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	border-top: 1px solid white;
+}
+
+#contact {
+	float: right;
+	padding-right: 30px;
+
+}
+
+.btt {
+	position: absolute;
+	bottom: 0;
+	padding: 15px 15px;
+}
