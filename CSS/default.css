@@ -1,9 +1,12 @@
 body {
-	background-color: black;
+	background-color: #232B32;
 	font-family: Verdana, Trebuchet, sans-serif;
 	color: white;
 	margin: 0px;
 	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 nav {
@@ -14,7 +17,7 @@ nav {
 }
 
 nav:hover {
-	background-color: #121212;
+	background-color: #152028;
 }
 
 .home-logo {
@@ -48,9 +51,15 @@ nav a:hover {
 	color: #00A8CCDD;
 }
 
+.main-content {
+	flex: 1 0 auto;
+	margin-top: 70px;
+	margin-bottom: 125px;
+	color: red;
+}
+
 footer {
-	position: absolute;
-	bottom: 0;
+	position: relative;
 	width: 100%;
 	border-top: 1px solid white;
 }
@@ -65,4 +74,10 @@ footer {
 	position: absolute;
 	bottom: 0;
 	padding: 15px 15px;
+	text-decoration: none;
+	color: white;
+}
+
+.btt:visited {
+	color: white;
 }
