@@ -52,10 +52,61 @@ nav a:hover {
 }
 
 .main-content {
-	margin-top: 70px;
-	margin-bottom: 125px;
-	color: red;
-	height: 1000px;
+	margin-top: 50px;
+}
+
+.main-page {
+	padding-top: 40px;
+}
+
+.main-page p {
+	line-height: 30px;
+}
+
+.main-page, .section {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.section {
+	border-bottom: 1px solid white;
+	display: flex;
+}
+
+.section-panel {
+	flex: 50%;
+	max-width: 800px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.section-panel + .section-panel {
+	margin-left: 5%;
+}
+
+.project-preview {
+	max-width: 800px;
+	height: 75%;
+}
+
+.project-preview img {
+	width: 100%;
+	border-radius: 20px;
+	transition: transform .2s;
+}
+
+.project-preview img:hover {
+	transform: scale(1.01);
+}
+
+h1 {
+	font-size: 70px;
+	margin-bottom: 30px;
+}
+
+h1, h2 {
+	font-style: italic;
+	font-variant: small-caps;
 }
 
 footer {
