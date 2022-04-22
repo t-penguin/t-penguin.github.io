@@ -71,17 +71,33 @@ nav a:hover {
 .section {
 	border-bottom: 1px solid white;
 	display: flex;
+	flex-wrap: wrap;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.section-header {
+	flex: 0 0 100%;
+	text-align: center;
 }
 
 .section-panel {
-	flex: 50%;
+	flex: 45%;
 	max-width: 800px;
-	margin-top: 50px;
-	margin-bottom: 50px;
 }
 
 .section-panel + .section-panel {
 	margin-left: 5%;
+}
+
+.section-panel p {
+	margin-right: 40px;
+}
+
+.section-panel img
+{
+	width: 100%;
+	border-radius: 20px;
 }
 
 .project-preview {
@@ -101,10 +117,20 @@ nav a:hover {
 
 h1 {
 	font-size: 70px;
-	margin-bottom: 30px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
-h1, h2 {
+h2 {
+	font-size: 35px;
+	margin-top: 0px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h1, h2, h3 {
 	font-style: italic;
 	font-variant: small-caps;
 }
