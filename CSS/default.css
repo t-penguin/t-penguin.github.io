@@ -52,7 +52,9 @@ nav a:hover {
 }
 
 .main-content {
-	margin-top: 50px;
+	margin: 50px auto 0px;
+	max-width: 1400px;
+	min-width: 1000px;
 }
 
 .main-page {
@@ -81,38 +83,54 @@ nav a:hover {
 	text-align: center;
 }
 
-.section-panel {
+.section-half {
 	flex: 45%;
-	max-width: 800px;
+	max-width: 600px;
 }
 
-.section-panel + .section-panel {
-	margin-left: 5%;
-}
-
-.section-panel p {
+.section-half p {
 	margin-right: 40px;
 }
 
-.section-panel img
+.section-quarter
+{
+	flex: 20%;
+	max-width: 267px;
+}
+
+.section-quarter img
 {
 	width: 100%;
-	border-radius: 20px;
+	border-radius: 10px;
+}
+
+.section-spacer {
+	margin-left: 5%;
 }
 
 .project-preview {
-	max-width: 800px;
-	height: 75%;
+	/*max-width: 800px;*/
 }
 
-.project-preview img {
+.radius-15
+{
 	width: 100%;
-	border-radius: 20px;
+	border-radius: 15px;
+}
+
+.hover-scale
+{
 	transition: transform .2s;
 }
 
-.project-preview img:hover {
+.hover-scale:hover
+{
 	transform: scale(1.01);
+}
+
+img 
+{
+	margin-top: 25px;
 }
 
 h1 {
