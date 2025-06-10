@@ -2,32 +2,35 @@
  * Add gradient to main background?
  * */
 
+:root {
+    --background-1: #222222;
+
+    --nav-height: 50px;
+    --footer-height: 50px;
+}
+
 body {
 	background-color: #232B32;
 	font-family: Verdana, Trebuchet, sans-serif;
 	color: white;
-	margin: 0px;
+	margin: var(--nav-height) 0 0;
 	padding: 0px;
 	display: grid;
 	grid-template-rows: 1fr auto;
-	min-height: 100vh;
+	min-height: calc(100vh - var(--nav-height));
 }
 
 nav {
 	position: fixed;
-	top: 0px;
+	top: 0;
 	width: 100%;
-	border-bottom: 1px solid white;
-}
-
-nav:hover {
-	background-color: #152028;
+    height: var(--nav-height);
+    font-variant: small-caps;
+    background-color: var(--background-1);
 }
 
 .home-logo {
 	position: fixed;
-	left: 10px;
-	top: 0px;
 }
 
 nav ul {
@@ -44,9 +47,14 @@ nav li {
 }
 
 nav a {
+    --hpadding: 15px;
+
 	display: block;
 	text-align: center;
-	padding: 25px 16px;
+    padding: calc((var(--nav-height) - 20px) / 2);
+	padding-left: var(--hpadding);
+    padding-right: var(--hpadding);
+    height: auto;
 	color: white;
 	text-decoration: none;
 }
@@ -56,30 +64,30 @@ nav a:hover {
 }
 
 .main-content {
-	margin: 50px auto 0px;
+	margin: 0 auto;
 	max-width: 1400px;
 	min-width: 1000px;
 }
 
 .main-page {
-	padding-top: 40px;
+	padding: 0 50px;
 }
 
 .main-page p {
 	line-height: 30px;
 }
 
-.main-page, .section {
-	padding-left: 50px;
-	padding-right: 50px;
+.home-blurb {
+    min-width: 550px;
+    max-width: 650px;
+    width: calc(50% - 100px);
 }
 
 .section {
 	border-bottom: 1px solid white;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding: 20px 50px;
 }
 
 .section-header {
@@ -94,16 +102,15 @@ nav a:hover {
 
 .section-half p {
 	margin-right: 40px;
+    margin-top: 0;
 }
 
-.section-quarter
-{
+.section-quarter {
 	flex: 20%;
 	max-width: 267px;
 }
 
-.section-quarter img
-{
+.section-quarter img {
 	width: 100%;
 	border-radius: 10px;
 }
@@ -116,36 +123,26 @@ nav a:hover {
 	/*max-width: 800px;*/
 }
 
-.radius-15
-{
+.radius-15 {
 	width: 100%;
 	border-radius: 15px;
 }
 
-.hover-scale
-{
+.hover-scale {
 	transition: transform .2s;
 }
 
-.hover-scale:hover
-{
+.hover-scale:hover {
 	transform: scale(1.01);
-}
-
-img 
-{
-	margin-top: 25px;
 }
 
 h1 {
 	font-size: 70px;
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-bottom: 0;
 }
 
 h2 {
 	font-size: 35px;
-	margin-top: 0px;
 }
 
 h3 {
@@ -155,12 +152,16 @@ h3 {
 h1, h2, h3 {
 	font-style: italic;
 	font-variant: small-caps;
+    margin-top: 0;
 }
 
 footer {
 	position: relative;
+    height: var(--footer-h);
 	width: 100%;
+    background-color: var(--background-1);
 	border-top: 1px solid white;
+    font-variant: small-caps;
 }
 
 #contact {
@@ -178,4 +179,85 @@ footer {
 
 .btt:visited {
 	color: white;
+}
+
+@media screen and (max-width: 900px) {
+    h1 {
+        font-size: 8vw;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+
+    h3 {
+        font-size: 4vw;
+        margin-top: 5px;
+    }
+    
+    .main-content {
+        margin-left: 0;
+        min-width: auto;
+    }
+
+    .main-page {
+        padding: 10px 15px;
+        width: calc(100% - 30px);
+    }
+
+    .home-blurb {
+        min-width: auto;
+        width: 100%;
+    }
+    
+    .section {
+        padding: 10px 15px;
+    }
+
+    .section-spacer {
+        margin-left: 1%;
+    }
+
+    .section-half img {
+        margin-top: 10px;
+    }
+
+    h3 {
+        font-size: 3vw;
+        margin-top: 5px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 10vw;
+    }
+
+    h2 {
+        font-size: 8vw;
+    }
+
+    h3 {
+        font-size: 6.25vw;
+        margin-top: 5px;
+    }
+
+    .section-spacer {
+        margin-left: 4%;
+    }
+
+    .section-half {
+        flex: 100%;
+        max-width: none;
+    }
+    
+    .section-quarter {
+        flex: 40%;
+        max-width: none;
+    }
+
+    .mobile-vanish {
+        display: none;
+    }
 }
