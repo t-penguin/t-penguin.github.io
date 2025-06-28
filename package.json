@@ -1,0 +1,43 @@
+{
+  "name": "t-penguin.github.io",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "webpack --mode production",
+    "start-dev": "webpack serve --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t-penguin/t-penguin.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/t-penguin/t-penguin.github.io/issues"
+  },
+  "homepage": "https://github.com/t-penguin/t-penguin.github.io#readme",
+  "dependencies": {
+    "@babel/core": "^7.27.4",
+    "@babel/preset-react": "^7.27.1",
+    "babel-loader": "^10.0.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.3",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.29.0",
+    "css-loader": "^7.1.2",
+    "eslint": "^9.29.0",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.2.0",
+    "style-loader": "^4.0.0",
+    "webpack-dev-server": "^5.2.2"
+  }
+}
