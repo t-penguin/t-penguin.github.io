@@ -1,0 +1,10 @@
+.page-header {
+    font-variant: small-caps;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 70px;
+    padding: 0;
+    margin: 0;
+}
