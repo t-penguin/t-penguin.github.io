@@ -1,3 +1,92 @@
+:root {
+    /** Base colors */
+    --clr-dark-a0: #000000;
+    --clr-dark-a20: #202020;
+    --clr-light-a0: #ffffff;
+    --clr-light-a20: #dfdfdf;
+
+    /** Theme primary colors */
+    --clr-primary-a0: #16c3de;
+    --clr-primary-a10: #3abcd3;
+    --clr-primary-a20: #4db4c8;
+    --clr-primary-a30: #5aadbe;
+    --clr-primary-a40: #64a5b3;
+    --clr-primary-a50: #6c9ea9;
+
+    /** Theme surface colors */
+    --clr-surface-a0: #ffffff;
+    --clr-surface-a10: #f0f0f0;
+    --clr-surface-a20: #e1e1e1;
+    --clr-surface-a30: #d3d3d3;
+    --clr-surface-a40: #c5c5c5;
+    --clr-surface-a50: #b6b6b6;
+
+    /** Theme tonal surface colors */
+    --clr-surface-tonal-a0: #eef9fc;
+    --clr-surface-tonal-a10: #e1ebed;
+    --clr-surface-tonal-a20: #d5dddf;
+    --clr-surface-tonal-a30: #c8cfd1;
+    --clr-surface-tonal-a40: #bcc1c3;
+    --clr-surface-tonal-a50: #afb4b5;
+}
+
 body {
+    background-color: var(--clr-surface-a0);
+    color: var(--clr-dark-a0);
     margin: 0;
+}
+
+nav {
+    background-color: var(--clr-primary-a0);
+}
+
+nav a {
+    color: var(--clr-dark-a20);
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--clr-primary-a20);
+    color: var(--clr-dark-a0);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /** Theme primary colors */
+        --clr-primary-a0: #187685;
+        --clr-primary-a10: #3d8492;
+        --clr-primary-a20: #58939f;
+        --clr-primary-a30: #71a2ac;
+        --clr-primary-a40: #88b1b9;
+        --clr-primary-a50: #a0c0c7;
+        
+        /** Theme surface colors */
+        --clr-surface-a0: #121212;
+        --clr-surface-a10: #282828;
+        --clr-surface-a20: #3f3f3f;
+        --clr-surface-a30: #575757;
+        --clr-surface-a40: #717171;
+        --clr-surface-a50: #8b8b8b;
+
+        /** Theme tonal surface colors */
+        --clr-surface-tonal-a0: #161b1c;
+        --clr-surface-tonal-a10: #2b3031;
+        --clr-surface-tonal-a20: #424647;
+        --clr-surface-tonal-a30: #5a5e5f;
+        --clr-surface-tonal-a40: #737777;
+        --clr-surface-tonal-a50: #8d9091;
+    }
+
+    body {
+        color: var(--clr-light-a0);
+        font-family: Verdana, Trebuchet, sans-serif;
+    }
+
+    nav a {
+        color: var(--clr-light-a20);
+    }
+
+    nav a:hover {
+        color: var(--clr-light-a0);
+    }
 }
