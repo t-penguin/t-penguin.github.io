@@ -1,6 +1,56 @@
-.navbar {
+:root {
+    --nav-height: 50px;
+}
+
+nav {
     position: sticky;
+    font-variant: small-caps;
+    height: var(--nav-height);
     top: 0;
-    
-    border: 1px solid red;
+}
+
+nav .left {
+    float: left;
+    display: block;
+    height: 100%;
+}
+
+nav .left a {
+    height: 100%;
+}
+
+nav .right {
+    float: right;
+    display: block;
+}
+
+nav .logo img {
+    height: var(--nav-height);
+    width: auto;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    float: left;
+}
+
+nav span {
+    --nav-link-padding: 15px;
+
+    display: block;
+    text-align: center;
+    height: 100%;
+    padding: calc((var(--nav-height) - 20px) / 2) var(--nav-link-padding);
 }
