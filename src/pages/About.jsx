@@ -1,11 +1,12 @@
 import React from "react";
+import PageHeader from "../components/PageHeader";
 
 const About = () => {
   return (
-    <div className="about">
-        <h1>About Page</h1>
+    <div className="content about">
+        <PageHeader headerText={"About Me"} />
     </div>
   );
-}
+};
 
 export default About;
