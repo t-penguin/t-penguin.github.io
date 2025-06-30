@@ -6,19 +6,27 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import NavBar from "./components/NavBar";
 import About from "./pages/About";
+import Reflections from "./pages/Reflections";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <div>
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects">
+          <Route path="reflections" element={<Reflections />} />
+          <Route path="" element={<Projects />} />
+        </Route>
         <Route path="/about" element={<About />} />
       </Routes>
-    </BrowserRouter>
+    </div>
   );
 };
 
 const root = createRoot(document.getElementById("root"));
-root.render(<App />);
+root.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);
