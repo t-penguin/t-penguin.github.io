@@ -32,7 +32,7 @@
 
 body {
     font-family: Verdana, Trebuchet, sans-serif;
-    background-color: var(--clr-surface-a0);
+    background-color: var(--clr-surface-a10);
     color: var(--clr-dark-a0);
     margin: 0;
 }
