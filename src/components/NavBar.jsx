@@ -8,7 +8,7 @@ const NavBar = () => {
       <div className="left">
         <Link to="/" className="logo">
           <ul>
-            <li><img src="./Frozen_Rose.png"></img></li>
+            <li><img src="./Images/Frozen_Rose.png"></img></li>
             <li><span>Frozen Rose</span></li>
           </ul>
         </Link>
