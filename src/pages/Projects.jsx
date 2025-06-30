@@ -1,26 +1,25 @@
 import React from "react";
-import NavBar from "../components/NavBar";
 import PageHeader from "../components/PageHeader";
 import ImageCard from "../components/ImageCard";
 import { Link } from "react-router-dom";
 
 const Projects = () => {
   const placeholder = {
-    img: "./Images/1920x1080.png",
+    img: "/Images/1920x1080.png",
     alt: "Placeholder Image",
     header: "Title",
     text: "Hook Description"
   }
 
   const reflections = {
-    img: "./Images/1920x1080.png",
+    img: "/Images/1920x1080.png",
     alt: "Placeholder Image",
     header: "Reflections Series",
     text: "A 3-part story about a world beyond ours"
   };
 
   const pokemonRB = {
-    img: "./Images/1920x1080.png",
+    img: "/Images/1920x1080.png",
     alt: "Placeholder Image",
     header: "Pokémon Red & Blue",
     text: "A return to the Kanto Region"
