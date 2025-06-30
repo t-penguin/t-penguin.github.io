@@ -56,6 +56,7 @@ nav a:hover, a.active {
 }
 
 .content {
+    box-shadow: 0 4px 8px 0 #00000034, 0 6px 20px 0 #00000030;
     background-color: var(--clr-surface-a20);
     border-radius: 10px;
     margin: 15px 40px;
@@ -71,14 +72,14 @@ nav a:hover, a.active {
 }
 
 .card-container {
-    margin: 10px 0;
+    margin: 20px 0;
     display: grid;
 }
 
 .col3 {
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 1%;
-    row-gap: 15px;
+    column-gap: 1.5%;
+    row-gap: 25px;
 }
 
 .hover-scale {
@@ -86,7 +87,7 @@ nav a:hover, a.active {
 }
 
 .hover-scale:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -130,6 +131,10 @@ nav a:hover, a.active {
 
     nav a:hover, a.active {
         color: var(--clr-light-a0);
+    }
+
+    .content {
+        box-shadow: 0 4px 8px 0 #3f3f3f68, 0 6px 20px 0 #3f3f3f60;
     }
 
     .horizontal-divider {

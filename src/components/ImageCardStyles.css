@@ -1,5 +1,9 @@
+.image-card {
+    box-shadow: 0 4px 8px 0 #00000068, 0 6px 20px 0 #00000060;
+}
+
 .image-card-image img {
-    border-radius: 10px 10px 0 0;
+    /* border-radius: 10px 10px 0 0; */
     display: block;
     width: 100%;
 }
@@ -7,7 +11,7 @@
 .image-card-text {
     margin: 0;
     padding: 10px 10px;
-    border-radius: 0 0 10px 10px;
+    /* border-radius: 0 0 10px 10px; */
 }
 
 .image-card-text h2 {
