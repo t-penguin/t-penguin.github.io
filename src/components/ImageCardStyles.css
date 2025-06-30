@@ -1,0 +1,17 @@
+.image-card-image img {
+    border-radius: 10px 10px 0 0;
+    display: block;
+    width: 100%;
+}
+
+.image-card-text {
+    margin: 0;
+    padding: 10px 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+.image-card-text h2 {
+    font-variant: small-caps;
+    margin: 0;
+    margin-bottom: 5px;
+}
