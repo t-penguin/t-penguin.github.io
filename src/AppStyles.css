@@ -61,6 +61,7 @@ nav a:hover, a.active {
     border-radius: 10px;
     margin: 15px 40px;
     padding: 10px;
+    padding-bottom: 15px;
 }
 
 .horizontal-divider {
