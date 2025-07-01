@@ -55,17 +55,23 @@ nav a:hover, a.active {
     color: var(--clr-dark-a0);
 }
 
+h1, h2, h3 {
+    font-variant: small-caps;
+    padding: 0;
+    margin: 0;
+}
+
 .content {
     box-shadow: 0 4px 8px 0 #00000034, 0 6px 20px 0 #00000030;
     background-color: var(--clr-surface-a20);
     border-radius: 10px;
     margin: 15px 40px;
     padding: 10px;
-    padding-bottom: 15px;
 }
 
 .horizontal-divider {
     border-bottom: 1px solid var(--clr-dark-a0);
+    margin: 10px 0;
 }
 
 .image-card-text {
@@ -74,6 +80,10 @@ nav a:hover, a.active {
 
 .card-container {
     margin: 20px 0;
+    display: grid;
+}
+
+.tab-container {
     display: grid;
 }
 
@@ -89,6 +99,22 @@ nav a:hover, a.active {
 
 .hover-scale:hover {
     transform: scale(1.03);
+}
+
+.project-description {
+    width: 60%;
+}
+
+.tab {
+    background-color: var(--clr-primary-a20);
+    font-variant: small-caps;
+    text-align: center;
+    cursor: default;
+    padding: 20px 0;
+}
+
+.tab:hover {
+    background-color: var(--clr-primary-a30);
 }
 
 @media (prefers-color-scheme: dark) {
