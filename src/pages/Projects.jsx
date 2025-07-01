@@ -1,5 +1,5 @@
 import React from "react";
-import PageHeader from "../components/PageHeader";
+import { PageHeader } from "../components/Headers";
 import ImageCard from "../components/ImageCard";
 import { Link } from "react-router-dom";
 
